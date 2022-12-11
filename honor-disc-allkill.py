@@ -1,0 +1,17 @@
+enemy = Target.PromptTarget("Target an enemy")
+
+Target.SetLast(enemy)
+
+Player.InvokeVirtue("Honor")
+Target.WaitForTarget(100, False)
+Target.Last()
+Misc.Pause(650)
+Player.UseSkill("Discordance")
+Target.WaitForTarget(100, False)
+Target.Last()
+Misc.Pause(650)
+Player.ChatSay("All Attack")
+Target.WaitForTarget(100, False)
+Target.Last()
+Misc.Pause(650)
+Player.ChatSay("All Guard me")
